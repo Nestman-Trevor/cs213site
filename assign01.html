@@ -24,9 +24,8 @@
   <script>
   <!-- Next line is testing for mobile devices -->
   var ratio = window.devicePixelRatio || 1;
-  var scrn = window.screen;
-  var width = back.width = scrn.width;
-  var height = back.height = scrn.height * 1.5;
+  var width = back.width = document.documentElement.clientWidth;
+  var height = back.height = document.documentElement.clientHeight * 1.5;
   var letters = Array(256).join(1).split('');
 
   var draw = function () {
