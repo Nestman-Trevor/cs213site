@@ -22,6 +22,8 @@
   width="1280" height="900">
   </canvas>
   <script>
+  <!-- Next line is testing for mobile devices -->
+  var ratio = window.devicePixelRatio || 1;
   var scrn = window.screen;
   var width = back.width = scrn.width;
   var height = back.height = scrn.height * 1.5;
