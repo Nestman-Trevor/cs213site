@@ -15,49 +15,189 @@
   <!-- Maybe JavaScript --> <!-- ToDo -->
 
 </head>
-<body style="background-color: black; padding: .5em; color: green;text-align: center;">
-  <div style="text-align: center; display: inline-block">
-    <!-- Title Section -->
-    <div>
-      <h1 style="font-size: 3.5em;font-size: 3.5vw;">
-        Welcome to Trevor Nestman's Home Page
-      </h1>
-      <h3>
-        <a href="index.html" style="color:green;
-        text-decoration: none" onmouseover="this.style.color='#8B0000'"
-        onMouseOut="this.style.color='#008000'">CS 213 Assignments</a>
-      </h3>
-      <hr style="background-color: rgb(64,64,64); border-color: rgb(64,64,64);
-      margin-top: 1em; margin-bottom: 1em; height: 2px">
-    </div>
-    <!-- Content Section -->
-    <div style="display: inline-block">
-      <div style="float:left; margin:1em">
-        <img src="img/nestmanFamSm.jpg" alt="Adorable Family of Three" style="width:25vw;height:31.25vw">
-        <p style="font-family:'Arial Black', Gadget, sans-serif;font-size: 2vw; color: chartreuse">This is my family</p>
-      </div>
-      <div style="float:right; margin:1em">
-        <p>Trevor Nestman</p>
-        <p>
-          My major is <b style="color: rgb(170,170,170)">Computer Information Technology</b>
-        </p>
-        <p>I was born in San Diego and grew up in South Jordan, Utah</p>
-      </div>
-    </div>
-    <blockquote cite="https://www.lds.org/scriptures/bofm/ether/12.41?lang=eng#40"
-    style="width: 40vw; margin-left: 4em">
-      <p align="left">
-        Favorite Quote:<br>
-        Ether 12:41<br>
-        "I would commend you to seek this Jesus of whom the prophets and apostles
-        have written, that the grace of God the Father, and also the Lord Jesus
-        Christ, and the Holy Ghost, which beareth record of them, may be and
-        abide in you forever. Amen."
-      </p>
-    </blockquote>
+<body style="background-color: black;">
+  <!-- Matrix Background -->
+  <!-- Inspired From Shaun Dunne http://cssdeck.com/labs/the-matrix -->
+  <canvas id="back" style="position:absolute; z-index: -1"
+  width="1280" height="900">
+  </canvas>
+  <script>
+  var scrn = window.screen;
+  var width = back.width = scrn.width;
+  var height = back.height = scrn.height * 1.5;
+  var letters = Array(256).join(1).split('');
+
+  var draw = function () {
+    back.getContext('2d').fillStyle='rgba(0,0,0,.05)';
+    back.getContext('2d').fillRect(0,0,width,height);
+    back.getContext('2d').fillStyle='rgb(0,255,0)';
+    letters.map(function(y_pos, index){
+      text = String.fromCharCode(65393+Math.random()*33);
+      x_pos = index * 10;
+      back.getContext('2d').fillText(text, x_pos, y_pos);
+      letters[index] = (y_pos > 758 + Math.random() * 1e4) ? 0 : y_pos + 10;
+    });
+  };
+  setInterval(draw, 80);
+</script>
+  <div style=" color: rgb(0,200,0);text-align: center;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif">
+  <!-- The Main Body -->
+  <div style="text-align: center; display: inline-block; float: center;
+  background-color: rgba(0,0,0,0.7); padding: .5em;">
+  <!-- Title Section -->
+  <div>
+    <h1 style="font-size: 3.5em;font-size: 3.5vw;">
+      Welcome to Trevor Nestman's Home Page
+    </h1>
+    <h3>
+      <a href="index.html" style="color:rgb(0, 180, 0);
+      text-decoration: none" onmouseover="this.style.color='#8B0000'"
+      onMouseOut="this.style.color='rgb(0, 180, 0)'">CS 213 Assignments</a>
+    </h3>
+    <hr style="background-color: rgb(64,64,64); border-color: rgb(64,64,64);
+    margin-top: 1em; margin-bottom: 1em; height: 2px">
   </div>
+  <!-- Content Section -->
+  <div style="display: inline-block">
+    <div style="float:left; margin:1em">
+      <img src="img/myFamily.jpg" alt="Adorable Family of Three"
+      style="width:40em; height:30em; width:40vw; height:30vw">
+      <p style="font-family:'Arial Black', Gadget, sans-serif; font-size: 2em; font-size: 2vw;
+      color: chartreuse">This is my family</p>
+    </div>
+    <div style="float:right; margin:1em; width:30em; width:30vw; text-align:left">
+      <p><b>Name</b>: <span style="float:right">Trevor Nestman</span></p>
+      <p><b>Major</b>:
+        <span style="color:rgb(170,170,170); float:right">
+          Computer Information Technology
+        </span>
+      </p>
+      <p><b>Birthplace</b>:
+        <span style="float:right">
+          San Diego, CA
+        </span>
+      </p>
+      <p><b>Favorite Game</b>:
+        <span style="float:right">
+          Fallout 4
+        </span>
+      </p>
+      <p><b>Favorite Color</b>:
+        <span style="float:right">
+          Probably <span style="color:rgb(0,255,0)">Green</span>
+        </span>
+      </p>
+      <p><b>Favorite Drink</b>:
+        <span style="float:right">
+          Dr. Pepper
+        </span>
+      </p>
+      <p><b>Hobbies</b>:
+        <span style="float:right">
+          Skiing, Video Games, and Homework
+        </span>
+      </p>
+      <p style="margin-top:1.5em; margin-top:1.5vw">
+        <span style="padding-left:5em; padding-left:5vw">I</span>
+        have enjoyed my education thus far at BYU-I. I'm excited to learn
+        new skills in programming and web developement. I'm hoping to find an
+        internship in the next couple of months to immerse myself in this
+        amazing industry. If everything goes as planned, I should be graduating
+        in July or by the end of the year at the latest.
+        <br><br>
+        <span style="padding-left:5em; padding-left:5vw">I</span>
+        married my beautiful wife, Reyven, December 27th, 2014 in the
+        San Diego Temple. Reyven is graduated and is the perfect housewife.
+        She grew up in Tijuana, Mexico and can make some amazing tortillas.
+        Everyone should be jealous. She's a great wife.
+        <br><br>
+        <span style="padding-left:5em; padding-left:5vw">Our</span> beautiful
+        little girl was born May 2nd, 2015. She enjoys eating, climbing, and
+        touching everything.
+      </p>
+    </div>
+  </div>
+  <blockquote cite="https://www.lds.org/scriptures/bofm/ether/12.41?lang=eng#40"
+  style="width: 50em; width: 50vw; margin-left: auto; margin-right: auto;">
+  <p style="font-family:'Arial Black', Gadget, sans-serif; text-align:left;">
+    Favorite Quote:<br>
+    Ether 12:41<br>
+    <span style="padding-left:5em; padding-left:5vw">"I</span> would commend you to seek this Jesus of whom the prophets and apostles
+    have written, that the grace of God the Father, and also the Lord Jesus
+    Christ, and the Holy Ghost, which beareth record of them, may be and
+    abide in you forever. Amen."
+  </p>
+</blockquote>
+<hr style="background-color: rgb(64,64,64); border-color: rgb(64,64,64);
+margin-top: 1em; margin-bottom: 1em; height: 2px">
+<table style="width:70em; width:70vw; border-spacing:1em; border-spacing:1vw;
+margin-left:auto; margin-right:auto; background-color:rgb(38, 38, 38);
+border: 2px solid green;">
+  <tr style="border-bottom: 1px solid rgb(0, 78, 0)">
+    <th colspan="5" style="font-size:2em; font-size:2vw">Class Schedule</th>
+  </tr>
+  <tr style="border-bottom: 1px solid rgb(0, 78, 0)">
+    <th style="border-right: 1px solid rgb(0, 78, 0);
+    width:5em; width:5vw;">Course #</th>
+    <th style="border-right: 1px solid rgb(0, 78, 0);
+    vertical-align:middle">Course Description</th>
+    <th style="border-right: 1px solid rgb(0, 78, 0);
+    width:4em; width:4vw;">Sec #</th>
+    <th style="border-right: 1px solid rgb(0, 78, 0); width:10em; width:10vw">Class Time</th>
+    <th style="width:10em; width:10vw">Location</th>
+  </tr>
+  <tr style="border-bottom: 1px solid rgb(0, 78, 0)">
+    <td style="border-right: 1px solid rgb(0, 78, 0); vertical-align:middle">CIT 225</td>
+    <td style="border-right: 1px solid rgb(0, 78, 0)">This course covers the
+      physical and logical design elements of relational
+      and object-relational databases, including the definition of and organization
+      of structures into a database catalog. It explores symbolic drawing
+      methodologies, like Information Engineering and UML. This course teaches
+      SQL language semantics, including DDL, DML, and DQL structures. It
+      exposes students to database configuration and tuning.</td>
+      <td style="border-right: 1px solid rgb(0, 78, 0)">02</td>
+      <td style="border-right: 1px solid rgb(0, 78, 0)">MWF 11:30AM - 12:30PM</td>
+      <td>MAIN Campus, Smith Building, 478</td>
+    </tr>
+    <tr style="border-bottom: 1px solid rgb(0, 78, 0)">
+      <td style="border-right: 1px solid rgb(0, 78, 0); vertical-align:middle">CIT 241</td>
+      <td style="border-right: 1px solid rgb(0, 78, 0)">This course teaches
+        the principles of network design standards and
+        architectures. Students will learn the configuration of use and networking
+        devices including repeaters, hubs, bridges, switches, and routers to
+        create enterprise networks.</td>
+        <td style="border-right: 1px solid rgb(0, 78, 0)">01</td>
+        <td style="border-right: 1px solid rgb(0, 78, 0)">MWF 12:45PM - 1:45PM</td>
+        <td>MAIN Campus, Smith Building, 442</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgb(0, 78, 0)">
+        <td style="border-right: 1px solid rgb(0, 78, 0); vertical-align:middle">CS 213</td>
+        <td style="border-right: 1px solid rgb(0, 78, 0)">Internet and web
+          basics, web fundamentals, web browsers, web servers,
+          and web terminology. This course teaches the concepts behind the fundamental
+          tools used for building client-side web applications. It emphasizes
+          client side programming standards and programming tools used to create
+          dynamic web applications.</td>
+          <td style="border-right: 1px solid rgb(0, 78, 0)">01</td>
+          <td style="border-right: 1px solid rgb(0, 78, 0)">TR 9:45AM - 11:15AM</td>
+          <td style="border-right: 1px solid rgb(0, 78, 0)">MAIN Campus, Austin Building, 210</td>
+        </tr>
+        <tr>
+          <td style="border-right: 1px solid rgb(0, 78, 0); vertical-align:middle">CS 235</td>
+          <td style="border-right: 1px solid rgb(0, 78, 0)">Builds on the
+            foundation of CS 124 and CS 165 to introduce the
+            fundamental concepts of data structures and the algorithms that proceed
+            from them.</td>
+            <td style="border-right: 1px solid rgb(0, 78, 0)">03</td>
+            <td style="border-right: 1px solid rgb(0, 78, 0)">0:00AM - 0:00AM</td>
+            <td>MAIN Campus, WEB - Online Class , WEB</td>
+          </tr>
+        </table>
+      </div>
+    </div>
 
-  <!-- JavaScript Link --> <!-- ToDo -->
+      <!-- JavaScript Link --> <!-- ToDo -->
 
-</body>
+  </body>
 </html>
