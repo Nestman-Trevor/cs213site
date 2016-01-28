@@ -1,3 +1,5 @@
+
+var letColor = 'rgb(0,255,0)';
 // This creates a code rain type background
 function matrixThis(){
   var ratio = window.devicePixelRatio || 1;
@@ -12,7 +14,7 @@ function matrixThis(){
   var draw = function () {
     document.getElementById('matrixCa').getContext('2d').fillStyle='rgba(0,0,0,.05)';
     document.getElementById('matrixCa').getContext('2d').fillRect(0,0,width,height);
-    document.getElementById('matrixCa').getContext('2d').fillStyle='rgb(0,255,0)';
+    document.getElementById('matrixCa').getContext('2d').fillStyle=letColor;
     letters.map(function(y_pos, index){
       text = String.fromCharCode(65393+Math.random()*33);
       x_pos = index * 10;
@@ -22,3 +24,5 @@ function matrixThis(){
   };
   setInterval(draw, 80);
 }
+
+function setMaColor(newColor){letColor = newColor;}

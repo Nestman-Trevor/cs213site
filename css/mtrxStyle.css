@@ -94,17 +94,35 @@ input, textarea{
   margin-top: 1em;
 }
 
+textarea {
+  resize: none;
+}
+
 .pictureTitle {
   font-family:'Arial Black', Gadget, sans-serif;
   font-size: 3em; font-size: 3vw;
   color: chartreuse;
 }
 
-.glowTrans {
+.glowGreen {
   background-color: rgb(38, 38, 38);
   background-color: rgba(38, 38, 38, 0.8);
   border-radius: 25px;
   box-shadow: 3.5px 3.5px 6px rgba(100,255,100, .8);
+}
+
+.glowRed {
+  background-color: rgb(38, 38, 38);
+  background-color: rgba(38, 38, 38, 0.8);
+  border-radius: 25px;
+  box-shadow: 3.5px 3.5px 6px rgba(255,100,100, .8);
+}
+
+.glowBlue {
+  background-color: rgb(38, 38, 38);
+  background-color: rgba(38, 38, 38, 0.8);
+  border-radius: 25px;
+  box-shadow: 3.5px 3.5px 6px rgba(100,100,255, .8);
 }
 
 .topSpace {
