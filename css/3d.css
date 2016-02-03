@@ -1,3 +1,301 @@
 /*
   3d type css
 */
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background:  rgb(200,200,200);
+  background: -webkit-linear-gradient(left,rgb(200,200,200), white, rgb(200,200,200)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left,rgb(200,200,200), white, rgb(200,200,200)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left,rgb(200,200,200), white, rgb(200,200,200)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(left,rgb(200,200,200), white, rgb(200,200,200)); /* Standard syntax */
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+h1 {
+  position: relative;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 4em; font-size: 4vw;
+  font-style: italic;
+  vertical-align: top;
+  color: rgb(220,220,220);
+  font-weight:lighter;
+  text-shadow: -1px -1px 0 black, -1px 0 0 black, 0 -1px 0 black,
+                1px 1px 0 black, 1px 0 0 black, 0 1px 0 black,
+                0 -6px 6px rgba(0,0,0,.6), 0 -3px 3px rgba(0,0,0,.8),
+                0 4px 3px rgba(160, 224, 255, .8);
+}
+
+h2 {
+  font-size: 2.5em; font-size: 3vw;
+  font-family: cursive;
+  text-align: center;
+  margin: .5em;
+}
+
+h3 {
+  font-size: 2em; font-size: 2.5vw;
+  font-family: Georgia, serif;
+  margin: .25em;
+}
+
+p {
+  font-family: Georgia, serif;
+  font-size: 1.5em;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  margin: 0;
+  padding: 0;
+}
+img {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: rgb(50, 184, 230);
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  height: 5em;
+  margin-top: .5em;
+  text-align: center;
+  box-shadow:0 -8px 10px rgba(0,0,0,.8);
+  background:  rgb(200,200,200);
+  background: -webkit-linear-gradient(bottom, black 0%,rgb(120,120,120) 6%,rgb(140,140,140) 52%,rgb(160,160,160) 91%,rgb(40,40,40) 100%);
+  background: -o-linear-gradient(bottom, black 0%,rgb(120,120,120) 6%,rgb(140,140,140) 52%,rgb(160,160,160) 91%,rgb(40,40,40) 100%);
+  background: -moz-linear-gradient(bottom, black 0%,rgb(120,120,120) 6%,rgb(140,140,140) 52%,rgb(160,160,160) 91%,rgb(40,40,40) 100%);
+  background: linear-gradient(bottom, black 0%,rgb(120,120,120) 6%,rgb(140,140,140) 52%,rgb(160,160,160) 91%,rgb(40,40,40) 100%);
+}
+footer .footli li{
+  display: inline-block;
+  list-style-position: inside;
+  list-style-type: disc;
+  font-size: 1.5em; font-size: 2vw;
+  margin: .5em 2em; margin: .75vw 2.5vw;
+  text-shadow: 0 2px 2px black;
+}
+img {
+  height: 37vw;
+}
+
+form {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  margin: .25em;
+}
+
+div.smallBox {
+  display: inline-block;
+  margin: .25em;
+  width: 45%;
+  text-align: left;
+}
+a:hover {
+  text-decoration: underline;;
+  color: rgb(50, 184, 230);
+}
+a:visited {
+  text-decoration: none;
+  color: rgb(50, 184, 230);
+}
+
+nav img {
+  top: 0;
+  left: 1.6em; left: 1.6vw;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  height: inherit;
+  text-align: center;
+}
+
+nav.topNavFixed{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  z-index: 3;
+}
+/* here we make sure the body is always
+   atleast the screen size */
+div.wholeBody {
+  min-height:100%;
+  position:relative;
+}
+/* for the header and footer */
+div.contentBody {
+  padding: 6.5em 2em; padding: 6.5vw 2.5vw;
+}
+
+.menubar {
+  position:relative;
+  float: left;
+  height: 6em; height: 6.5vw;
+  width: 100%;
+  box-shadow:0 12px 20px rgba(0,0,0,.9);
+  background:  rgb(200,200,200);
+  background: -webkit-radial-gradient(center bottom, rgba(180, 180, 180, 0.8) 0%, rgba(200, 200, 200, 0) 70%),
+              -webkit-linear-gradient(top, black 0%,rgb(120,120,120) 6%,rgb(140,140,140) 52%,rgb(160,160,160) 91%,rgb(40,40,40) 100%);
+  background: -o-radial-gradient(center bottom, rgba(180, 180, 180, 0.8) 0%, rgba(200, 200, 200, 0) 70%),
+              -o-linear-gradient(top, black 0%,rgb(120,120,120) 6%,rgb(140,140,140) 52%,rgb(160,160,160) 91%,rgb(40,40,40) 100%);
+  background: -moz-radial-gradient(center bottom, rgba(180, 180, 180, 0.8) 0%, rgba(200, 200, 200, 0) 70%),
+              -moz-linear-gradient(top, black 0%,rgb(120,120,120) 6%,rgb(140,140,140) 52%,rgb(160,160,160) 91%,rgb(40,40,40) 100%);
+  background: radial-gradient(center bottom, rgba(180, 180, 180, 0.8) 0%, rgba(200, 200, 200, 0) 70%),
+              linear-gradient(top, black 0%,rgb(120,120,120) 6%,rgb(140,140,140) 52%,rgb(160,160,160) 91%,rgb(40,40,40) 100%);
+}
+
+.btn {
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  height: 3em; height: 3.5vw;
+  width: 7em; width: 7vw;
+  border: 1px solid black;
+  border-radius: .5em;
+  background: -webkit-linear-gradient(top, rgb(170,170,170) 0%, rgb(230,230,230) 100%);
+  background: -o-linear-gradient(top, rgb(170,170,170) 0%, rgb(230,230,230) 100%);
+  background: -moz-linear-gradient(top, rgb(170,170,170) 0%, rgb(230,230,230) 100%);
+  background: linear-gradient(top, rgb(170,170,170) 0%, rgb(230,230,230) 100%);
+}
+
+.downClickMvRight{
+  left: 2px;
+  top: 2px;
+}
+
+.downClickMvLeft{
+  left: -2px;
+  top: 2px;
+}
+
+.btnDark {
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  margin: 1.5em 5.5em; margin: 1.5vw 5.5vw;
+  position: relative;
+  height: 3em; height: 3.5vw;
+  width: 7em; width: 7vw;
+  border: 1px solid black;
+  border-radius: .5em;
+  background: -webkit-linear-gradient(top, rgb(110,110,110) 0%, rgb(160,160,160) 100%);
+  background: -o-linear-gradient(top, rgb(110,110,110) 0%, rgb(160,160,160) 100%);
+  background: -moz-linear-gradient(top, rgb(110,110,110) 0%, rgb(160,160,160) 100%);
+  background: linear-gradient(top, rgb(110,110,110) 0%, rgb(160,160,160) 100%);
+}
+
+.btnLeftBlue {
+  display: inline-block;
+  margin: 1.5 1em; margin: 1.5vw 1.5vw;
+  border-top: 1px solid rgb(60,60,60);
+  border-left: 1px solid rgb(60,60,60);
+  border-bottom: 1px solid rgb(230,230,230);
+  border-right: 1px solid rgb(230,230,230);
+  box-shadow: 1px 1px 1px black,
+              -1px -1px 1px black,
+              -2px -2px 6px rgba(0,0,0,.8),
+              -5px -5px 10px rgba(0,0,0,.4),
+              3px 3px 2px rgba(200, 224, 255,.9),
+              4px 4px 4px rgba(120, 194, 245,.4);
+}
+
+.btnLeftGreen {
+  display: inline-block;
+  margin: 1.5 1em; margin: 1.5vw 1.5vw;
+  border-top: 1px solid rgb(160,160,160);
+  border-left: 1px solid rgb(160,160,160);
+  border-bottom: 1px solid rgb(230,230,230);
+  border-right: 1px solid rgb(230,230,230);
+  box-shadow: 1px 1px 1px black,
+              -1px -1px 1px black,
+              -3px -3px 6px rgba(0,0,0,.8),
+              -6px -6px 10px rgba(0,0,0,.4),
+              2px 2px 2px rgba(150, 255, 150,.9),
+              3px 3px 4px rgba(155, 255, 100,.4);
+}
+
+.btnRightBlue {
+  display: inline-block;
+  margin: 1.5em 5.5em; margin: 1.5vw 5.5vw;
+  border-top: 1px solid rgb(60,60,60);
+  border-left: 1px solid rgb(230,230,230);
+  border-bottom: 1px solid rgb(230,230,230);
+  border-right: 1px solid rgb(60,60,60);
+  box-shadow: 1px 1px 1px black,
+              -1px -1px 1px black,
+              2px -2px 6px rgba(0,0,0,.8),
+              5px -5px 10px rgba(0,0,0,.4),
+              -3px 3px 2px rgba(200, 224, 255,.9),
+              -4px 4px 4px rgba(120, 194, 245,.4);
+}
+
+.btnRightGreen {
+  display: inline-block;
+  margin: 1.5em 5.5em; margin: 1.5vw 5.5vw;
+  border-top: 1px solid rgb(160,160,160);
+  border-left: 1px solid rgb(230,230,230);
+  border-bottom: 1px solid rgb(230,230,230);
+  border-right: 1px solid rgb(160,160,160);
+  box-shadow: 1px 1px 1px black,
+              -1px -1px 1px black,
+              3px -3px 6px rgba(0,0,0,.8),
+              6px -6px 10px rgba(0,0,0,.4),
+              -2px 2px 2px rgba(150, 255, 150,.9),
+              -3px 3px 4px rgba(150, 255, 150,.4);
+}
+
+.basicBox {
+  display: inline-block;
+  padding: .5em;
+  margin: .5em 0;
+  width: 100%;
+}
+.internalBox {
+  display: inline-block;
+  margin: .5em; margin: .5vw 1vw;
+  width: 45%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.navHeader {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+.italGold {
+  color: rgb(184, 134, 11);
+  font-style: italic;
+}
+._tab {
+  margin-left: 20px;
+}
+#price {
+  float: right;
+  margin-right: 2vw;
+}
+#sub {
+  font-size: 1.5vw;
+  z-index: 0;
+}

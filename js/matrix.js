@@ -1,4 +1,4 @@
-
+// variable is created outside to allow change
 var letColor = 'rgb(0,255,0)';
 // This creates a code rain type background
 function matrixThis(){
@@ -24,5 +24,5 @@ function matrixThis(){
   };
   setInterval(draw, 80);
 }
-
+// change matrix text color
 function setMaColor(newColor){letColor = newColor;}

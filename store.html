@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- This is the required title for class -->
+  <title>Buy Snowman</title>
+
+  <!-- CSS Link -->
+  <!-- <link rel="stylesheet" href="css/reset.css"> Not allowed to use... -->
+  <link rel="stylesheet" href="css/3d.css">
+
+  <!-- I'm including this stylesheet for the requirements on this assignment -->
+  <style>
+  h2 {
+    font-family: Georgia, serif;
+  }
+  h3 {
+    text-align: center;
+  }
+  h4 {
+    font-family: Georgia, serif;
+    font-size: 2em; font-size: 2vw;
+    margin: .25em;
+    text-align: center;
+  }
+  .text_top_left {
+    vertical-align: top;
+    text-align: left;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  li {
+    list-style-type: none;
+  }
+
+  .min_wid500 {
+    min-width: 500px;
+  }
+  </style>
+
+
+  <!-- Maybe JavaScript --> <!-- ToDo -->
+  <script src="js/snowStore.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+  <div id="top"class="wholeBody">
+    <nav class="topNavFixed">
+      <div class="menubar">
+        <div id="main" onclick="location.href='index.html'" class="btn btnLeftBlue" onmouseover="overBut('main')" onmouseout="outBut('main')">
+          <img alt="Assignments" src="img/list.png">
+        </div>
+        <div id="home" onclick="location.href='assign03.html'" class="btn btnLeftBlue" onmouseover="overBut('home')" onmouseout="outBut('home')">
+          <img alt="Main Menu" src="img/home.png">
+        </div>
+        <h1 class="navHeader">BUILD MY SNOWMAN</h1>
+        <div id="shop" onclick="location.href='store.html'" class="btn btnRightBlue" onmouseover="overBut('shop')" onmouseout="outBut('shop')">
+          <img alt="Store Front" src="img/shop.png">
+        </div>
+      </div>
+    </nav>
+    <div class="contentBody">
+      <h2>Order the Perfect Snowman</h2>
+      <hr>
+      <div class="basicBox">
+        <div class="internalBox">
+          <img alt="Perfect Snowman" src="img/good_snowman.jpg">
+        </div>
+        <div class="internalBox text_top_left min_wid500">
+          <h3>Product</h3>
+          <hr>
+          <form id="orderForm">
+            <div class="smallBox">
+              <h4>Snowman Size</h4>
+              <p class="_tab">
+                <input type="radio" name="size" value="4ft"> 4 Foot
+                <span id="price">$60</span><br>
+                <input type="radio" name="size" value="5ft" checked> 5 Foot
+                <span id="price">$80</span><br>
+                <input type="radio" name="size" value="6ft"> 6 Foot
+                <span id="price">$100</span><br>
+              </p>
+            </div>
+            <div class="smallBox">
+              <h4>Decorated?</h4>
+              <p class="_tab">
+                <input type="radio" name="decorated" value="yes" checked> Yes
+                <span id="price">+$15</span><br>
+                <input type="radio" name="decorated" value="no"> No
+                <span id="price">+$0</span><br>
+                <input type="radio" name="decorated" value="decPack">
+                <a href="#decorPackInfo" style="font-size:20px">Decor Pack</a>
+                <span id="price">+$10</span><br>
+              </p>
+            </div>
+            <hr>
+            <div>
+              First name: <input type="text" name="firstname" size="20" maxlength="18" placeholder="Firstname" required><br>
+              Last name: <input type="text" name="lastname" size="20" maxlength="18" placeholder="Lastname" required><br>
+              Email: <span style="margin-left:35px"><input type="text" name="email" size="30" maxlength="30" placeholder="john@gmail.com" required></span><br>
+              Address: <span style="margin-left:17px"><input type="text" name="address" size="40" maxlength="60" placeholder="123 Fake St." required></span><br>
+              Address 2: <input type="text" name="address2" size="40" maxlength="60" placeholder="Apt. 101"><br>
+              Post Code: <input type="text" name="postCode" size="20" maxlength="18" placeholder="89240"><br>
+              <select>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+              </select>
+              <br>
+
+              <input id="sub" type="submit" value="Submit" class="btn btnRightBlue" onmouseover="overBut('sub')" onmouseout="outBut('sub')">
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr>
+      <div id="decorPackInfo"class="basicBox">
+        <div class="internalBox">
+          <h3>Snowman Decor Package</h3>
+          <p>
+            If you want todo the decorating on the snowman, then the Decor Pack
+            is the choice for you! Let us do the arduous task of making the body.
+            When we finish, then you can do the final touches to your snowman.
+          </p>
+          <h4>Decor Pack Includes:</h4>
+          <ul>
+            <li>1 Hat</li>
+            <li>1 Carrot Nose</li>
+            <li>2 Stick Arms</li>
+            <li>1 Pipe</li>
+            <li>3 Buttons</li>
+            <li>2 Eyes (coal)</li>
+            <li>4 Smile (coal)</li>
+            <li>1 bucket</li>
+            <li>1 Scarf</li>
+          </ul>
+        </div>
+        <div class="internalBox">
+          <img alt="Perfect Snowman" src="img/snowman_kit.jpg">
+        </div>
+      </div>
+    </div>
+    <footer>
+      <ul class="footli">
+        <li><a href="#top">Top</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="assign03.html">Home</a></li>
+        <li><a href="index.html">Sites by Trevor</a></li>
+        <li><a href="mailto:nes12002@byui.edu">nes12002@byui.edu</a></li>
+      </footer>
+    </div>
+
+    <!-- JavaScript Link --> <!-- ToDo -->
+
+  </body>
+  </html>

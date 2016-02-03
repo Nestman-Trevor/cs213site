@@ -2,27 +2,122 @@
 <html>
 <head>
 
-<!-- Basic -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- This is the required title for class -->
-<title>3D Web Design</title>
+  <!-- This is the required title for class -->
+  <title>Build My Snowman</title>
 
-<!-- CSS Link --> <!-- ToDo -->
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/3d.css">
+  <!-- CSS Link -->
+  <!-- <link rel="stylesheet" href="css/reset.css"> Not allowed to use... -->
+  <link rel="stylesheet" href="css/3d.css">
 
-<!-- Maybe JavaScript --> <!-- ToDo -->
+  <!-- I'm including this stylesheet for the requirements on this assignment -->
+  <style>
+  /* the p style is in the external, but I'm using it here
+  to tie in with the class created */
+  p {
+    font-family: Georgia, serif;
+    font-size: 24px;
+  }
+  .likeP {
+    font-size: 0;
+    font-family: Georgia, serif;
+    font-size: 24px;
+  }
+  </style>
+
+
+  <!-- Maybe JavaScript --> <!-- ToDo -->
+  <script src="js/snowStore.js" type="text/javascript"></script>
+
 
 </head>
 <body>
-  <div>
-    <h1>This will be assignment #3</h1>
+  <div id="top" class="wholeBody">
+  <nav class="topNavFixed">
+    <div class="menubar">
+      <div id="main" onclick="location.href='index.html'" class="btn btnLeftBlue" onmouseover="overBut('main')" onmouseout="outBut('main')">
+        <img alt="Assignments" src="img/list.png">
+      </div>
+      <div id="home" onclick="location.href='assign03.html'" class="btn btnLeftBlue" onmouseover="overBut('home')" onmouseout="outBut('home')">
+        <img alt="Main Menu" src="img/home.png">
+      </div>
+      <h1 class="navHeader">BUILD MY SNOWMAN</h1>
+      <div id="shop" onclick="location.href='store.html'" class="btn btnRightBlue" onmouseover="overBut('shop')" onmouseout="outBut('shop')">
+        <img alt="Store Front" src="img/shop.png">
+      </div>
+    </div>
+  </nav>
+  <div class="contentBody">
+    <h2>Beautiful Snowmen, Without the Work</h2>
+    <hr>
+    <div class="basicBox">
+      <div class="internalBox">
+        <img alt="Perfect Snowman" src="img/mom_baby_snowman.jpg">
+      </div>
+      <div class="internalBox">
+        <h3>Our Product</h3>
+        <a href="store.html">Buy now-></a>
+        <p>
+          Build My Snowman provide professionally crafted snowmen directly
+          to the home.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="basicBox">
+      <div class="internalBox">
+        <h3>Our Mission</h3>
+        <p>
+          To make the winter season just a little bit warmer.
+        </p>
+      </div>
+      <div class="internalBox">
+        <img alt="Perfect Snowman" src="img/walking_baby.jpg">
+      </div>
+    </div>
+    <hr>
+    <div class="basicBox">
+      <div class="internalBox">
+        <img alt="Perfect Snowman" src="img/perplexed_baby.jpg">
+      </div>
+      <div class="internalBox">
+        <h3>How is it done?</h3>
+        <p>
+          Our team of <span class="italGold">certified snowman makers</span> will come
+          and craft the snowman according to the package ordered. Details on
+          the various packages we provide can be found on our
+          <a href="store.html" class="likeP">shopping page</a>.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="basicBox">
+      <div class="internalBox">
+        <h3>Welcome to the Family</h3>
+        <p>
+          Once your snowman has arrived, don't forget to take a
+          photo with newest member of the family.
+        </p>
+      </div>
+      <div class="internalBox">
+        <img alt="Perfect Snowman" src="img/fam_with_snowman.jpg">
+      </div>
+    </div>
   </div>
+  <footer>
+    <ul class="footli">
+      <li><a href="#top">Top</a></li>
+      <li><a href="store.html">Store</a></li>
+      <li><a href="assign03.html">Home</a></li>
+      <li><a href="index.html">Sites by Trevor</a></li>
+      <li><a href="mailto:nes12002@byui.edu">nes12002@byui.edu</a></li>
+  </footer>
+</div>
 
-
-<!-- JavaScript Link --> <!-- ToDo -->
+  <!-- JavaScript Link --> <!-- ToDo -->
 
 </body>
 </html>
