@@ -9,6 +9,7 @@ html {
 body {
   background:  rgb(200,200,200);
   background: -webkit-linear-gradient(left,rgb(200,200,200), white, rgb(200,200,200)); /* For Safari 5.1 to 6.0 */
+  background: -webkit-gradient(linear, left,rgb(200,200,200), white, rgb(200,200,200)); /* Old Webkit stuff */
   background: -o-linear-gradient(left,rgb(200,200,200), white, rgb(200,200,200)); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left,rgb(200,200,200), white, rgb(200,200,200)); /* For Firefox 3.6 to 15 */
   background: linear-gradient(left,rgb(200,200,200), white, rgb(200,200,200)); /* Standard syntax */
@@ -75,12 +76,13 @@ footer {
   bottom: 0;
   display: inline-block;
   width: 100%;
-  height: 5em;
+  height: 5.5em;
   margin-top: .5em;
   text-align: center;
   box-shadow:0 -8px 10px rgba(0,0,0,.8);
   background:  rgb(200,200,200);
   background: -webkit-linear-gradient(bottom, black 0%,rgb(120,120,120) 6%,rgb(140,140,140) 52%,rgb(160,160,160) 91%,rgb(40,40,40) 100%);
+  background: -webkit-gradient(linear, bottom, black 0%,rgb(120,120,120) 6%,rgb(140,140,140) 52%,rgb(160,160,160) 91%,rgb(40,40,40) 100%);
   background: -o-linear-gradient(bottom, black 0%,rgb(120,120,120) 6%,rgb(140,140,140) 52%,rgb(160,160,160) 91%,rgb(40,40,40) 100%);
   background: -moz-linear-gradient(bottom, black 0%,rgb(120,120,120) 6%,rgb(140,140,140) 52%,rgb(160,160,160) 91%,rgb(40,40,40) 100%);
   background: linear-gradient(bottom, black 0%,rgb(120,120,120) 6%,rgb(140,140,140) 52%,rgb(160,160,160) 91%,rgb(40,40,40) 100%);
@@ -156,6 +158,8 @@ div.contentBody {
   background:  rgb(200,200,200);
   background: -webkit-radial-gradient(center bottom, rgba(180, 180, 180, 0.8) 0%, rgba(200, 200, 200, 0) 70%),
               -webkit-linear-gradient(top, black 0%,rgb(120,120,120) 6%,rgb(140,140,140) 52%,rgb(160,160,160) 91%,rgb(40,40,40) 100%);
+  background: -webkit-gradient(radial, center bottom, rgba(180, 180, 180, 0.8) 0%, rgba(200, 200, 200, 0) 70%),
+              -webkit-gradient(linear,top, black 0%,rgb(120,120,120) 6%,rgb(140,140,140) 52%,rgb(160,160,160) 91%,rgb(40,40,40) 100%);
   background: -o-radial-gradient(center bottom, rgba(180, 180, 180, 0.8) 0%, rgba(200, 200, 200, 0) 70%),
               -o-linear-gradient(top, black 0%,rgb(120,120,120) 6%,rgb(140,140,140) 52%,rgb(160,160,160) 91%,rgb(40,40,40) 100%);
   background: -moz-radial-gradient(center bottom, rgba(180, 180, 180, 0.8) 0%, rgba(200, 200, 200, 0) 70%),
@@ -174,6 +178,7 @@ div.contentBody {
   border: 1px solid black;
   border-radius: .5em;
   background: -webkit-linear-gradient(top, rgb(170,170,170) 0%, rgb(230,230,230) 100%);
+  background: -webkit-gradient(linear,top, rgb(170,170,170) 0%, rgb(230,230,230) 100%);
   background: -o-linear-gradient(top, rgb(170,170,170) 0%, rgb(230,230,230) 100%);
   background: -moz-linear-gradient(top, rgb(170,170,170) 0%, rgb(230,230,230) 100%);
   background: linear-gradient(top, rgb(170,170,170) 0%, rgb(230,230,230) 100%);
@@ -200,6 +205,7 @@ div.contentBody {
   border: 1px solid black;
   border-radius: .5em;
   background: -webkit-linear-gradient(top, rgb(110,110,110) 0%, rgb(160,160,160) 100%);
+  background: -webkit-gradient(linear, top, rgb(110,110,110) 0%, rgb(160,160,160) 100%);
   background: -o-linear-gradient(top, rgb(110,110,110) 0%, rgb(160,160,160) 100%);
   background: -moz-linear-gradient(top, rgb(110,110,110) 0%, rgb(160,160,160) 100%);
   background: linear-gradient(top, rgb(110,110,110) 0%, rgb(160,160,160) 100%);

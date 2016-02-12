@@ -1,0 +1,112 @@
+/*
+This stylesheet is for rounded buttons
+*/
+
+.btn-size-med {
+  width: 6em;
+}
+
+.btn-size-sm {
+  width: 4em;
+}
+
+.circle-btn-blue {
+  padding-bottom: 100%;
+  position: relative;
+  height: 0;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgb(51, 173, 255);
+  background: -webkit-radial-gradient(rgb(51, 153, 255) 60%, rgb(0, 115, 230) 70%);
+  background: -webkit-gradient(radial, rgb(51, 153, 255) 60%, rgb(0, 115, 230) 70%);
+  background: -o-radial-gradient(rgb(51, 153, 255) 60%, rgb(0, 115, 230) 70%);
+  background: -moz-radial-gradient(rgb(51, 153, 255) 60%, rgb(0, 115, 230) 70%);
+  background: radial-gradient(rgb(51, 153, 255) 60%, rgb(0, 115, 230) 70%);
+}
+
+.circle-btn-blue:hover {
+  background: rgb(51, 173, 255);
+  background: -webkit-radial-gradient(rgb(0, 89, 179) 60%, rgb(0, 63, 128) 70%);
+  background: -webkit-gradient(radial, rgb(0, 89, 179) 60%, rgb(0, 63, 128) 70%);
+  background: -o-radial-gradient(rgb(0, 89, 179) 60%, rgb(0, 63, 128) 70%);
+  background: -moz-radial-gradient(rgb(0, 89, 179) 60%, rgb(0, 63, 128) 70%);
+  background: radial-gradient(rgb(0, 89, 179) 60%, rgb(0, 63, 128) 70%);
+}
+
+.circle-btn-red {
+  padding-bottom: 100%;
+  position: relative;
+  height: 0;
+  width: 100%;
+  color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgb(255, 51, 51);
+  background: -webkit-radial-gradient(rgb(255, 51, 51) 60%, rgb(153, 0, 0) 70%);
+  background: -webkit-gradient(radial, rgb(255, 51, 51) 60%, rgb(153, 0, 0) 70%);
+  background: -o-radial-gradient(rgb(255, 51, 51) 60%, rgb(153, 0, 0) 70%);
+  background: -moz-radial-gradient(rgb(255, 51, 51) 60%, rgb(153, 0, 0) 70%);
+  background: radial-gradient(rgb(255, 51, 51) 60%, rgb(153, 0, 0) 70%);
+}
+
+.circle-btn-red:hover {
+  background: rgb(153, 0, 0);
+  background: -webkit-radial-gradient(rgb(153, 0, 0) 60%, rgb(103, 0, 0) 70%);
+  background: -webkit-gradient(radial, rgb(153, 0, 0) 60%, rgb(103, 0, 0) 70%);
+  background: -o-radial-gradient(rgb(153, 0, 0) 60%, rgb(103, 0, 0) 70%);
+  background: -moz-radial-gradient(rgb(153, 0, 0) 60%, rgb(103, 0, 0) 70%);
+  background: radial-gradient(rgb(153, 0, 0) 60%, rgb(103, 0, 0) 70%);
+}
+
+.circle-btn-green {
+  padding-bottom: 100%;
+  position: relative;
+  height: 0;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgb(51, 255, 51);
+  background: -webkit-radial-gradient(rgb(51, 255, 51) 60%, rgb(0, 153, 0) 70%);
+  background: -webkit-gradient(radial, rgb(51, 255, 51) 60%, rgb(0, 153, 0) 70%);
+  background: -o-radial-gradient(rgb(51, 255, 51) 60%, rgb(0, 153, 0) 70%);
+  background: -moz-radial-gradient(rgb(51, 255, 51) 60%, rgb(0, 153, 0) 70%);
+  background: radial-gradient(rgb(51, 255, 51) 60%, rgb(0, 153, 0) 70%);
+}
+
+.circle-btn-green:hover {
+  background: rgb(0, 153, 0);
+  background: -webkit-radial-gradient(rgb(0, 153, 0) 60%, rgb(0, 103, 0) 70%);
+  background: -webkit-gradient(radial, rgb(0, 153, 0) 60%, rgb(0, 103, 0) 70%);
+  background: -o-radial-gradient(rgb(0, 153, 0) 60%, rgb(0, 103, 0) 70%);
+  background: -moz-radial-gradient(rgb(0, 153, 0) 60%, rgb(0, 103, 0) 70%);
+  background: radial-gradient(rgb(0, 153, 0) 60%, rgb(0, 103, 0) 70%);
+}
+
+.btn-size-med a {
+  display:block;
+  float:left;
+  width:100%;
+  padding: 50% 0;
+  line-height:1em;
+  margin-top:-0.5em;
+  margin-bottom: -0.5em;
+  text-align:center;
+  color: black;
+  font-family:Verdana;
+  font-size:1.2em;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+.sm-btn-txt {
+  font-size: .5em;
+  vertical-align: top;
+}
+
+.btn-size-med a:hover{
+  color: rgb(240,240,240);
+}
