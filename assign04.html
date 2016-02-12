@@ -36,7 +36,7 @@
       <!-- Calculator -->
       <div class="centerBlock">
         <h2 id="warning" class="noSee">*Please fill out all fields*</h2>
-        <form name="morCalc" onreset="clearHtml('results'), hideWarning()"
+        <form name="morCalc" onreset="clearHtml('results'), hideWarning(), setFocus('apr')"
               onchange="calcIfPossible()">
           <h3 id="aprTitle" class="">Annual Percentage Rate (APR) </h3>
           <input id="apr" type="text" maxlength="7" placeholder="3.5"

@@ -58,7 +58,9 @@ function calcIfPossible() {
   if (mp != '')
     calcMortgage();
 }
-
+function setFocus(id) {
+  document.getElementById(id).focus();
+}
 function clearHtml(id) {
   document.getElementById(id).innerHTML = '';
 }
