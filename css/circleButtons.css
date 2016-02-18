@@ -27,6 +27,7 @@ This stylesheet is for rounded buttons
 }
 
 .circle-btn-blue:hover {
+  cursor: pointer;
   background: rgb(51, 173, 255);
   background: -webkit-radial-gradient(rgb(0, 89, 179) 60%, rgb(0, 63, 128) 70%);
   background: -webkit-gradient(radial, rgb(0, 89, 179) 60%, rgb(0, 63, 128) 70%);
@@ -53,6 +54,7 @@ This stylesheet is for rounded buttons
 }
 
 .circle-btn-red:hover {
+  cursor: pointer;
   background: rgb(153, 0, 0);
   background: -webkit-radial-gradient(rgb(153, 0, 0) 60%, rgb(103, 0, 0) 70%);
   background: -webkit-gradient(radial, rgb(153, 0, 0) 60%, rgb(103, 0, 0) 70%);
@@ -78,6 +80,7 @@ This stylesheet is for rounded buttons
 }
 
 .circle-btn-green:hover {
+  cursor: pointer;
   background: rgb(0, 153, 0);
   background: -webkit-radial-gradient(rgb(0, 153, 0) 60%, rgb(0, 103, 0) 70%);
   background: -webkit-gradient(radial, rgb(0, 153, 0) 60%, rgb(0, 103, 0) 70%);

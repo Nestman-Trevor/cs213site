@@ -40,14 +40,6 @@ function allFilled(p, i, n) {
   }
 }
 
-function showWarning(){
-  document.getElementById('warning').className = 'see';
-}
-
-function hideWarning(){
-  document.getElementById('warning').className = 'noSee';
-}
-
 function monthlyPayment(p, i, n) {
   var mp = p * i * (Math.pow(1 + i, n)) / (Math.pow(1 + i, n) - 1);
   return mp.toFixed(2); //round and give two decimal places
@@ -57,10 +49,4 @@ function calcIfPossible() {
   var mp = document.getElementById('results').innerHTML;
   if (mp != '')
     calcMortgage();
-}
-function setFocus(id) {
-  document.getElementById(id).focus();
-}
-function clearHtml(id) {
-  document.getElementById(id).innerHTML = '';
 }
