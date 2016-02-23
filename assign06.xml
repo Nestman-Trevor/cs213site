@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Not sure what to do here...
-<!DOCTYPE bsa [
+
+<!DOCTYPE bsa SYSTEM "assign06.dtd">
+<!--
 <!ELEMENT bsa (council)>
 <!ELEMENT council (troop)>
 <!ELEMENT scout (firstname,lastname,phone,address,rank,meritbadge)>
