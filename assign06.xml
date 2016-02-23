@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE bsa SYSTEM "assign06.dtd">
-<!--
-<!ELEMENT bsa (council)>
-<!ELEMENT council (troop)>
-<!ELEMENT scout (firstname,lastname,phone,address,rank,meritbadge)>
-<!ELEMENT firstname (#PCDATA)>
-<!ELEMENT lastname (#PCDATA)>
-<!ELEMENT phone (#PCDATA)>
-<!ELEMENT address (street,city,state)>
-<!ELEMENT street (#PCDATA)>
-<!ELEMENT city (#PCDATA)>
-<!ELEMENT state (#PCDATA)>
-<!ELEMENT rank (#PCDATA)>
-<!ELEMENT meritbadge (#PCDATA)>
-]>
--->
+
 <bsa>
   <council name="Storm">
     <troop troop-number="5777" unit-name="ThunderThugs">
