@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <!-- This is the required title for class -->
+  <title>Good Stuff</title>
+
+  <!-- CSS Link -->
+
+
+  <!-- JavaScript -->
+  <script type="text/javascript">
+  function doIt(){
+
+    var req = new XMLHttpRequest();
+    req.onreadystatechange = function()
+    {
+      if (req.readyState == 4 && req.status == 200)
+      {
+        var xmlObject = req.responseXML;
+        var xmlDoc = xmlObject.documentElement;
+
+
+        var scoutfn = xmlDoc.getElementsByTagName('firstname')[0].childNodes[0].nodeValue;
+
+        var scoutln = xmlDoc.getElementsByTagName('lastname')[0].childNodes[0].nodeValue;
+
+        document.getElementById('firstname').value = scoutfn;
+        document.getElementById('lastname').value = scoutln;
+      }
+      else {
+        alert("There was a problem retrieving the XML data:\n" + req.statusText);
+      }
+    }
+    req.open("GET", "assign07.xml", true);
+    req.send();
+  }
+  </script>
+
+</head>
+<body onload="doIt()">
+  <form>
+    <h1>Boy Scout Finder</h1>
+    <input type="text" id="firstname"/>
+    <input type="text" id="lastname"/>
+  </form>
+</body>
+</html>

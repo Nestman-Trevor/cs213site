@@ -1,0 +1,36 @@
+.btn {
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  height: 3em; height: 3.5vw;
+  width: 7em; width: 7vw;
+  border: 1px solid black;
+  border-radius: .5em;
+  background: -webkit-linear-gradient(top, rgb(170,170,170) 0%, rgb(230,230,230) 100%);
+  background: -webkit-gradient(linear,top, rgb(170,170,170) 0%, rgb(230,230,230) 100%);
+  background: -o-linear-gradient(top, rgb(170,170,170) 0%, rgb(230,230,230) 100%);
+  background: -moz-linear-gradient(top, rgb(170,170,170) 0%, rgb(230,230,230) 100%);
+  background: linear-gradient(top, rgb(170,170,170) 0%, rgb(230,230,230) 100%);
+}
+
+.btn:hover {
+  /* make it look like it's pushed down */
+  left: 2px;
+  top: 2px;
+
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  margin: 1.5em 5.5em; margin: 1.5vw 5.5vw;
+  position: relative;
+  height: 3em; height: 3.5vw;
+  width: 7em; width: 7vw;
+  border: 1px solid black;
+  border-radius: .5em;
+  background: -webkit-linear-gradient(top, rgb(110,110,110) 0%, rgb(160,160,160) 100%);
+  background: -webkit-gradient(linear, top, rgb(110,110,110) 0%, rgb(160,160,160) 100%);
+  background: -o-linear-gradient(top, rgb(110,110,110) 0%, rgb(160,160,160) 100%);
+  background: -moz-linear-gradient(top, rgb(110,110,110) 0%, rgb(160,160,160) 100%);
+  background: linear-gradient(top, rgb(110,110,110) 0%, rgb(160,160,160) 100%);
+}

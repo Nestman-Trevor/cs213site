@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Stylesheets for xml -->
+<?xml-stylesheet type="text/xsl" href="assign07.xsl"?>
+
+<!DOCTYPE bsa SYSTEM "assign06.dtd">
+
+<bsa>
+  <council name="Storm">
+    <troop troop-number="5777" unit-name="ThunderThugs">
+      <scout>
+        <firstname>Trevor</firstname>
+        <lastname>Goodness</lastname>
+        <phone>801-509-4388</phone>
+        <address>
+          <street>123 Fake st.</street>
+          <city>Rexburg</city>
+          <state>Idaho</state>
+        </address>
+        <rank date-earned="2007-06-15">Eagle</rank>
+        <rank date-earned="2007-03-20">Life</rank>
+        <rank date-earned="2006-12-30">Star</rank>
+        <rank date-earned="2006-07-09">1stClass</rank>
+        <rank date-earned="2005-12-24">2ndClass</rank>
+        <rank date-earned="2005-06-30">Tenderfoot</rank>
+        <meritbadge date-earned="2006-07-14">Swimming</meritbadge>
+        <meritbadge date-earned="2006-12-23">First Aid</meritbadge>
+        <meritbadge date-earned="2006-09-05">Life Saving</meritbadge>
+        <meritbadge date-earned="2006-08-11">Camping</meritbadge>
+        <meritbadge date-earned="2006-07-23">Citizenship in the Community</meritbadge>
+        <meritbadge date-earned="2006-06-19">Citizenship in the Nation</meritbadge>
+        <meritbadge date-earned="2006-02-07">Citizenship in the World</meritbadge>
+        <meritbadge date-earned="2006-02-05">Communication</meritbadge>
+        <meritbadge date-earned="2005-09-09">Cooking</meritbadge>
+        <meritbadge date-earned="2005-08-05">Cycling</meritbadge>
+        <meritbadge date-earned="2005-07-15">Emergency Preparedness</meritbadge>
+        <meritbadge date-earned="2005-06-25">Environmental Science</meritbadge>
+        <meritbadge date-earned="2005-05-14">Family Life</meritbadge>
+        <meritbadge date-earned="2005-04-19">Hiking</meritbadge>
+        <meritbadge date-earned="2005-03-08">Personal Fitness</meritbadge>
+        <meritbadge date-earned="2005-02-05">Personal Management</meritbadge>
+        <meritbadge date-earned="2005-01-11">Sustainability</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Jacob</firstname>
+        <lastname>Allright</lastname>
+        <phone>208-519-4988</phone>
+        <address>
+          <street>125 Fake st.</street>
+          <city>Rexburg</city>
+          <state>Idaho</state>
+        </address>
+        <rank date-earned="2011-05-30">Tenderfoot</rank>
+        <meritbadge date-earned="2006-07-14">Cooking</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Blake</firstname>
+        <lastname>Shelton</lastname>
+        <phone>905-678-4978</phone>
+        <address>
+          <street>135 Fake st.</street>
+          <city>Rexburg</city>
+          <state>Idaho</state>
+        </address>
+        <rank date-earned="2014-05-30">Tenderfoot</rank>
+        <meritbadge date-earned="2013-07-14">Music</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Chef</firstname>
+        <lastname>Ramsey</lastname>
+        <phone>208-616-4987</phone>
+        <address>
+          <street>129 Fake st.</street>
+          <city>Rexburg</city>
+          <state>Idaho</state>
+        </address>
+        <rank date-earned="2010-05-30">Tenderfoot</rank>
+        <meritbadge date-earned="2011-02-14">Cooking</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Michael</firstname>
+        <lastname>Bay</lastname>
+        <phone>258-529-4888</phone>
+        <address>
+          <street>115 Fake st.</street>
+          <city>Rexburg</city>
+          <state>Idaho</state>
+        </address>
+        <rank date-earned="2011-05-30">Tenderfoot</rank>
+        <meritbadge date-earned="20012-07-14">Moviemaking</meritbadge>
+        <meritbadge date-earned="20012-08-26">Bugling</meritbadge>
+      </scout>
+    </troop>
+    <troop troop-number="5888" unit-name="ThunderBugs">
+      <scout>
+        <firstname>Nick</firstname>
+        <lastname>Rimando</lastname>
+        <phone>801-606-4086</phone>
+        <address>
+          <street>111 Fake st.</street>
+          <city>Salt Lake City</city>
+          <state>Utah</state>
+        </address>
+        <rank date-earned="2007-05-13">2ndClass</rank>
+        <rank date-earned="2006-04-28">Tenderfoot</rank>
+        <meritbadge date-earned="2006-07-14">Sports</meritbadge>
+        <meritbadge date-earned="2006-12-23">First Aid</meritbadge>
+        <meritbadge date-earned="2007-02-25">Personal Fitness</meritbadge>
+        <meritbadge date-earned="2007-01-30">Personal Management</meritbadge>
+        <meritbadge date-earned="2006-10-15">Sustainability</meritbadge>
+        <meritbadge date-earned="2006-11-05">Shotgun Shooting</meritbadge>
+        <meritbadge date-earned="2006-04-21">Rowing</meritbadge>
+        <meritbadge date-earned="2006-05-07">Reading</meritbadge>
+        <meritbadge date-earned="2006-05-14">Safety</meritbadge>
+        <meritbadge date-earned="2006-09-16">Scholarship</meritbadge>
+        <meritbadge date-earned="2006-09-01">Sculpture</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Kyle</firstname>
+        <lastname>Beckerman</lastname>
+        <phone>801-777-7066</phone>
+        <address>
+          <street>165 Fake st.</street>
+          <city>Salt Lake City</city>
+          <state>Utah</state>
+        </address>
+        <rank date-earned="2013-04-21">Tenderfoot</rank>
+        <meritbadge date-earned="2014-07-14">Sports</meritbadge>
+        <meritbadge date-earned="2014-10-25">Personal Fitness</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Joao</firstname>
+        <lastname>Plata</lastname>
+        <phone>801-770-7006</phone>
+        <address>
+          <street>145 Fake st.</street>
+          <city>Salt Lake City</city>
+          <state>Utah</state>
+        </address>
+        <rank date-earned="2012-04-21">Tenderfoot</rank>
+        <meritbadge date-earned="2013-07-14">Sports</meritbadge>
+        <meritbadge date-earned="2013-10-25">Personal Fitness</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Javier</firstname>
+        <lastname>Morales</lastname>
+        <phone>801-677-7766</phone>
+        <address>
+          <street>166 Fake st.</street>
+          <city>Salt Lake City</city>
+          <state>Utah</state>
+        </address>
+        <rank date-earned="2014-07-21">Tenderfoot</rank>
+        <meritbadge date-earned="2015-07-14">Sports</meritbadge>
+        <meritbadge date-earned="2015-10-25">Personal Fitness</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Luke</firstname>
+        <lastname>Mulholland</lastname>
+        <phone>801-577-7066</phone>
+        <address>
+          <street>168 Fake st.</street>
+          <city>Salt Lake City</city>
+          <state>Utah</state>
+        </address>
+        <rank date-earned="2013-04-21">Tenderfoot</rank>
+        <meritbadge date-earned="2014-07-14">Sports</meritbadge>
+        <meritbadge date-earned="2014-10-25">Personal Fitness</meritbadge>
+      </scout>
+    </troop>
+  </council>
+  <council name="DownSouth">
+    <troop troop-number="6111" unit-name="Cowboys">
+      <scout>
+        <firstname>Tony</firstname>
+        <lastname>Romo</lastname>
+        <phone>205-109-4388</phone>
+        <address>
+          <street>211 Fake st.</street>
+          <city>Dallas</city>
+          <state>Texas</state>
+        </address>
+        <rank date-earned="2010-06-15">Eagle</rank>
+        <rank date-earned="2009-12-20">Life</rank>
+        <rank date-earned="2009-08-30">Star</rank>
+        <rank date-earned="2008-12-09">1stClass</rank>
+        <rank date-earned="2008-09-24">2ndClass</rank>
+        <rank date-earned="2008-06-30">Tenderfoot</rank>
+        <meritbadge date-earned="2008-09-05">Sports</meritbadge>
+        <meritbadge date-earned="2008-07-14">Swimming</meritbadge>
+        <meritbadge date-earned="2008-12-23">First Aid</meritbadge>
+        <meritbadge date-earned="2008-03-05">Life Saving</meritbadge>
+        <meritbadge date-earned="2008-01-05">Camping</meritbadge>
+        <meritbadge date-earned="2009-09-05">Citizenship in the Community</meritbadge>
+        <meritbadge date-earned="2009-08-09">Citizenship in the Nation</meritbadge>
+        <meritbadge date-earned="2009-08-05">Citizenship in the World</meritbadge>
+        <meritbadge date-earned="2009-06-15">Communication</meritbadge>
+        <meritbadge date-earned="2009-06-05">Cooking</meritbadge>
+        <meritbadge date-earned="2009-05-15">Cycling</meritbadge>
+        <meritbadge date-earned="2009-05-13">Emergency Preparedness</meritbadge>
+        <meritbadge date-earned="2009-04-11">Environmental Science</meritbadge>
+        <meritbadge date-earned="2009-03-11">Family Life</meritbadge>
+        <meritbadge date-earned="2009-03-02">Hiking</meritbadge>
+        <meritbadge date-earned="2009-02-34">Personal Fitness</meritbadge>
+        <meritbadge date-earned="2009-02-12">Personal Management</meritbadge>
+        <meritbadge date-earned="2009-01-05">Sustainability</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Dez</firstname>
+        <lastname>Bryant</lastname>
+        <phone>205-529-4928</phone>
+        <address>
+          <street>214 Fake st.</street>
+          <city>Dallas</city>
+          <state>Texas</state>
+        </address>
+        <rank date-earned="2011-05-30">Tenderfoot</rank>
+        <meritbadge date-earned="2012-07-14">Sports</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Greg</firstname>
+        <lastname>Hardy</lastname>
+        <phone>205-566-4938</phone>
+        <address>
+          <street>232 Fake st.</street>
+          <city>Dallas</city>
+          <state>Texas</state>
+        </address>
+        <rank date-earned="2011-05-30">Tenderfoot</rank>
+        <meritbadge date-earned="2012-07-14">Sports</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Kellen</firstname>
+        <lastname>Moore</lastname>
+        <phone>205-119-4978</phone>
+        <address>
+          <street>244 Fake st.</street>
+          <city>Dallas</city>
+          <state>Texas</state>
+        </address>
+        <rank date-earned="2011-05-30">Tenderfoot</rank>
+        <meritbadge date-earned="2012-07-14">Sports</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Matt</firstname>
+        <lastname>Cassel</lastname>
+        <phone>205-509-4008</phone>
+        <address>
+          <street>288 Fake st.</street>
+          <city>Dallas</city>
+          <state>Texas</state>
+        </address>
+        <rank date-earned="2011-05-30">Tenderfoot</rank>
+        <meritbadge date-earned="2012-07-14">Sports</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Darren</firstname>
+        <lastname>McFadden</lastname>
+        <phone>205-414-4988</phone>
+        <address>
+          <street>271 Fake st.</street>
+          <city>Dallas</city>
+          <state>Texas</state>
+        </address>
+        <rank date-earned="2011-05-30">Tenderfoot</rank>
+        <meritbadge date-earned="2012-07-14">Sports</meritbadge>
+      </scout>
+    </troop>
+    <troop troop-number="6222" unit-name="Toro">
+      <scout>
+        <firstname>Brian</firstname>
+        <lastname>Hoyer</lastname>
+        <phone>832-119-4388</phone>
+        <address>
+          <street>311 Fake st.</street>
+          <city>Houston</city>
+          <state>Texas</state>
+        </address>
+        <rank date-earned="2010-06-15">Eagle</rank>
+        <rank date-earned="2009-12-20">Life</rank>
+        <rank date-earned="2009-08-30">Star</rank>
+        <rank date-earned="2008-12-09">1stClass</rank>
+        <rank date-earned="2008-09-24">2ndClass</rank>
+        <rank date-earned="2008-06-30">Tenderfoot</rank>
+        <meritbadge date-earned="2008-09-05">Sports</meritbadge>
+        <meritbadge date-earned="2008-07-14">Swimming</meritbadge>
+        <meritbadge date-earned="2008-12-23">First Aid</meritbadge>
+        <meritbadge date-earned="2008-03-05">Life Saving</meritbadge>
+        <meritbadge date-earned="2008-01-05">Camping</meritbadge>
+        <meritbadge date-earned="2009-09-05">Citizenship in the Community</meritbadge>
+        <meritbadge date-earned="2009-08-09">Citizenship in the Nation</meritbadge>
+        <meritbadge date-earned="2009-08-05">Citizenship in the World</meritbadge>
+        <meritbadge date-earned="2009-06-15">Communication</meritbadge>
+        <meritbadge date-earned="2009-06-05">Cooking</meritbadge>
+        <meritbadge date-earned="2009-05-15">Cycling</meritbadge>
+        <meritbadge date-earned="2009-05-13">Emergency Preparedness</meritbadge>
+        <meritbadge date-earned="2009-04-11">Environmental Science</meritbadge>
+        <meritbadge date-earned="2009-03-11">Family Life</meritbadge>
+        <meritbadge date-earned="2009-03-02">Hiking</meritbadge>
+        <meritbadge date-earned="2009-02-34">Personal Fitness</meritbadge>
+        <meritbadge date-earned="2009-02-12">Personal Management</meritbadge>
+        <meritbadge date-earned="2009-01-05">Sustainability</meritbadge>
+      </scout>
+      <scout>
+        <firstname>J.J.</firstname>
+        <lastname>Watt</lastname>
+        <phone>832-529-4928</phone>
+        <address>
+          <street>314 Fake st.</street>
+          <city>Houston</city>
+          <state>Texas</state>
+        </address>
+        <rank date-earned="2011-05-30">Tenderfoot</rank>
+        <meritbadge date-earned="2012-07-14">Sports</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Jadeveon</firstname>
+        <lastname>Clowney</lastname>
+        <phone>832-566-4938</phone>
+        <address>
+          <street>332 Fake st.</street>
+          <city>Houston</city>
+          <state>Texas</state>
+        </address>
+        <rank date-earned="2011-05-30">Tenderfoot</rank>
+        <meritbadge date-earned="2012-07-14">Sports</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Arian</firstname>
+        <lastname>Foster</lastname>
+        <phone>832-119-4978</phone>
+        <address>
+          <street>344 Fake st.</street>
+          <city>Houston</city>
+          <state>Texas</state>
+        </address>
+        <rank date-earned="2011-05-30">Tenderfoot</rank>
+        <meritbadge date-earned="2012-07-14">Sports</meritbadge>
+      </scout>
+      <scout>
+        <firstname>DeAndre</firstname>
+        <lastname>Hopkins</lastname>
+        <phone>832-509-4008</phone>
+        <address>
+          <street>388 Fake st.</street>
+          <city>Houston</city>
+          <state>Texas</state>
+        </address>
+        <rank date-earned="2011-05-30">Tenderfoot</rank>
+        <meritbadge date-earned="2012-07-14">Sports</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Brandon</firstname>
+        <lastname>Weeden</lastname>
+        <phone>832-414-4988</phone>
+        <address>
+          <street>371 Fake st.</street>
+          <city>Houston</city>
+          <state>Texas</state>
+        </address>
+        <rank date-earned="2011-05-30">Tenderfoot</rank>
+        <meritbadge date-earned="2012-07-14">Sports</meritbadge>
+      </scout>
+    </troop>
+  </council>
+</bsa>

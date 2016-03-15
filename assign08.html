@@ -2,22 +2,45 @@
 <html>
 <head>
 
-<!-- Basic -->
-<meta charset="utf-8">
-<!-- This is the required title for class -->
-<title>Trevor Nestman's Assignments"</title>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <!-- This is the required title for class -->
+  <title>Ajax and Crackerjax</title>
 
-<!-- CSS Link --> <!-- ToDo -->
+  <!-- css -->
+  <link rel="stylesheet" href="css/ajax.css">
 
-<!-- Maybe JavaScript --> <!-- ToDo -->
+  <!-- JavaScript -->
+  <script type="text/javascript" src="js/json.js"></script>
 
 </head>
-<body>
-  <div>
-    <h1>This will be assignment #8</h1>
+<body onload="setFocus('country')">
+  <div style="text-align:center; display:inline-block">
+    <h1>Select Country</h1>
+    <select id="country" onchange="getCities();" name="country1" >
+      <option value="usa" selected="selected">US</option>
+      <option value="mex">Mexico</option>
+      <option value="can">Canada</option>
+      <option value="rus">Russia</option>
+      <option value="ger">Germany</option>
+    </select>
+    <h3>Ten Largest Cities</h3>
+    <div style="text-align:left;">
+      <pre>
+        <h5>City ------------------ Population</h5>
+        <p id="cities"/>
+      </pre>
+    </div>
   </div>
-
-<!-- JavaScript Link --> <!-- ToDo -->
-
+  <hr>
+  <div  style="text-align:center; display:inline-block" >
+    <h1>Load JSON File</h1>
+    <p>
+      Filename: <input type="text" id="fileName" onchange="getJSON()">
+      <input type="button" onclick="getJSON()" value="Get JSON">
+    </p>
+    <div id="studentlist">
+    </div>
+  </div>
 </body>
 </html>
