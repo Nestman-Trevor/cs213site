@@ -117,11 +117,13 @@ input[type="button"] {
                 -1px 0 1px black, 0 -1px 1px black,
                 1px 0 1px black, 0 1px 1px black;
 }
-#warning.noSee {
+.noSee {
   margin: 0;
   padding: 0;
   font-size: 1px;
   color: transparent;
+  visibility: hidden;
+  visibility: collapse;
 }
 
 #apr {

@@ -1,22 +1,6 @@
 /*
 Mortgage Math
 */
-function calcMortgage() {
-  //principle amount (amount borrowed)
-  var pri = Number(document.getElementById('amount').value);
-  //monthly interest rate
-  var i = ((Number(document.getElementById('apr').value) / 100) / 12);
-  //number of payments months
-  var num = (Number(document.getElementById('years').value) * 12);
-
-  if (allFilled(pri, i, num)) {
-    //monthly mortgage payment
-    var mp = monthlyPayment(pri, i, num);
-
-    //display monthly mortgage payment
-    document.getElementById('results').innerHTML = mp.toString();
-  }
-}
 
 function allFilled(p, i, n) {
   if (i == '') {
@@ -37,6 +21,23 @@ function allFilled(p, i, n) {
   else {
     hideWarning();
     return true;
+  }
+}
+
+function calcMortgage() {
+  //principle amount (amount borrowed)
+  var pri = Number(document.getElementById('amount').value);
+  //monthly interest rate
+  var i = ((Number(document.getElementById('apr').value) / 100) / 12);
+  //number of payments months
+  var num = (Number(document.getElementById('years').value) * 12);
+
+  if (allFilled(pri, i, num)) {
+    //monthly mortgage payment
+    var mp = monthlyPayment(pri, i, num);
+
+    //display monthly mortgage payment
+    document.getElementById('results').innerHTML = mp.toString();
   }
 }
 

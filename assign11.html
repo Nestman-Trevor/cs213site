@@ -5,16 +5,32 @@
 <!-- Basic -->
 <meta charset="utf-8">
 <!-- This is the required title for class -->
-<title>Trevor Nestman's Assignments"</title>
+<title>Mileage Calculator</title>
 
-<!-- CSS Link --> <!-- ToDo -->
+<!-- CSS Link -->
+<link href="css/mileageCalc.css" rel="stylesheet">
 
-<!-- Maybe JavaScript --> <!-- ToDo -->
+<!-- Maybe JavaScript -->
+<script src="js/ajaxAssign11.js" type="text/javascript"></script>
 
 </head>
 <body>
-  <div>
-    <h1>This will be assignment #11</h1>
+  <div class="stars"></div>
+  <div class="main">
+    <h1>Mileage Calculator</h1>
+    <form name="trip">
+      <input type="text" name="startCity" placeholder="Start City">
+      <input type="text" name="startState" placeholder="Start State" maxlength="2">
+      <br>
+      <input type="text" name="endCity" placeholder="End City">
+      <input type="text" name="endState" placeholder="End State" maxlength="2">
+      <br>
+      <input type="button" onclick="xmlLoader()" value="Calculate">
+    </form>
+    <h2>Results</h2>
+    <textarea id="results" value="" cols="50" rows="10"></textarea>
+    <div id="earth">
+    </div>
   </div>
 
 <!-- JavaScript Link --> <!-- ToDo -->

@@ -17,5 +17,6 @@ function totalIt() {
     total += 2400000;
   }
 
-  document.getElementById('total').innerHTML = total;
+  document.getElementById('totalDis').innerHTML = total;
+  document.getElementById('total').value = total;
 }
